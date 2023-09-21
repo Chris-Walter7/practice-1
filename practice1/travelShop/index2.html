@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="../../dist/bundleNew.js"></script>
+  <style>
+    body {height: 100%}
+    .modal-wrap {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 100px;
+    }
+    .modal-btn {
+      padding: 10px;
+      background: aquamarine;
+      width: 90px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    .btn-second {
+      width: 120px;
+      border: 2px solid green
+    }
+    .modal-element {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      background: #fff;
+      border: 1px solid grey;
+    }
+    #first {
+      margin-top: 20px;
+      margin-left: 30px;
+      border: 2px solid grey;
+    }
+  </style>
+</head>
+<body>
+<div class="modal-wrap">
+  <button class="modal-btn" onclick="openModal('first')">Открыть</button>
+  <button class="modal-btn btn-second" onclick="openModalSecond('first')">Открыть модалку №2</button>
+  <button class="modal-btn" onclick="removeModal()">Удалить</button>
+</div>
+<div id="first" class="modal-element">MyModal2</div>
+</body>
+</html>
